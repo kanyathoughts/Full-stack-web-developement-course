@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>💚 kanya own tags</title>
+</head>
+<body>
+    <!-- red apple tag creation-->
+    <script>
+        class RedApple extends HTMLElement {
+            constructor(){
+                super();
+            }
+        }
+        customElements.define("red-apple", RedApple);
+        var redApple = new RedApple();
+        redApple.innerText ="This is custom red apple tag";
+        redApple.style.color="green";
+        document.body.appendChild(redApple);
+    </script>
+
+    <!--Creating own tags using html-->
+    <br>
+    <green-apple style="color: blueviolet; column-width: 0vmax; font-size: large;"><b>This is new tag using html</b></green-apple>
+</body>
+</html>

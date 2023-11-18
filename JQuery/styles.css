@@ -1,0 +1,29 @@
+button {
+    background-color: aquamarine;
+    width: 100px;
+    height: 100px;
+    display: block;
+    border-radius: 30%;
+    text-align: center;
+    align-items: center;
+    margin: 10px auto;
+}
+
+/* .pressed {
+    box-shadow: 10px 10px 10px blue;
+} */
+
+.pressed {
+    color: red;
+}
+
+.big-title {
+    color: yellow;
+    font-size: 20rem;
+    font-family: cursive;
+    text-align: center;
+}
+
+.margin {
+    margin: 0px;
+}

@@ -1,0 +1,40 @@
+diff --git a/main/mining-data-core/src/test/java/innowake/mining/data/core/controlflow/impl/c/Wndt3406Test.java b/main/mining-data-core/src/test/java/innowake/mining/data/core/controlflow/impl/c/Wndt3406Test.java
+new file mode 100644
+index 0000000000..5374bdce5e
+--- /dev/null
++++ b/main/mining-data-core/src/test/java/innowake/mining/data/core/controlflow/impl/c/Wndt3406Test.java
+@@ -0,0 +1,18 @@
++/*
++ * Copyright (c) 2023 Deloitte. All rights reserved.
++ */
++package innowake.mining.data.core.controlflow.impl.c;
++
++import org.junit.Test;
++
++public class Wndt3406Test extends CCalculateControlFlowTest {
++
++	@Test
++	public void testAllStatement() {
++		doTest("wdnt3406.c");
++	}
++	
++	private void doTest(final String fileName) {
++		doTest("wdnt3406", fileName);
++	}
++}
+diff --git a/main/mining-data-core/src/test/resources/innowake/mining/data/core/controlflow/impl/c/wdnt3406/wdnt3406.c b/main/mining-data-core/src/test/resources/innowake/mining/data/core/controlflow/impl/c/wdnt3406/wdnt3406.c
+new file mode 100644
+index 0000000000..5860f8f4ce
+--- /dev/null
++++ b/main/mining-data-core/src/test/resources/innowake/mining/data/core/controlflow/impl/c/wdnt3406/wdnt3406.c
+@@ -0,0 +1,9 @@
++#include <stdio.h>
++int main() {	
++	if(i <= 5){
++		printf("inside the if loop")
++		++i;
++	} else {
++		printf("inside the else loop")
++	}
++}
+\ No newline at end of file
